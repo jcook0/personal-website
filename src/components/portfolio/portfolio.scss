@@ -1,0 +1,51 @@
+.portfolio {
+
+    h1{
+        margin: 0;
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .portfolio-wrapper {
+        margin: 40px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content:initial;
+        height: 100%;
+
+        .project {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 33%;
+            height: 20%;
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            flex-basis: 100px;
+            flex-grow: 1;
+
+            transition: all 0.2s ease;
+
+            .title {
+                font-weight: 600;
+                font-size: 27px;
+            }
+
+            .link {
+                color: rgb(43, 152, 255);
+            }
+
+            &:hover {
+                flex-grow: 4;
+            }
+
+        }
+
+        
+
+    }
+
+}
