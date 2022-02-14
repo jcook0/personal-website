@@ -1,9 +1,13 @@
+@import "../../global.scss";
+
 .intro {
     padding-top: 60px;
-    background-color: lightgreen;
+   //c background:linear-gradient(transparent 450px, rgb(255, 255, 255));
+    background-color: $green;
     display: flex;
 
     .left {
+        padding-top: 70px;
         flex: 0.4;
 
         .imgContainer {
@@ -16,7 +20,6 @@
             justify-content: center;
 
             .icon {
-
                 width: 200px;
                 height: 200px;
                 background-color: white;
@@ -27,12 +30,10 @@
             img{ 
                 
             }
-
         }
-    
-
     }
     .right {
+        padding-top: 70px;
         flex: 0.6;
 
         .wrapper {
@@ -44,20 +45,53 @@
 
             h1 {
                 color: #121212;
-                font-size: 67px;
+                font-size: 70px;
                 margin-bottom: 0px;
+                z-index: 1;
+
+                @media only screen and (max-width: 750px) { 
+                    font-size: 40px;
+                }
+                
             }
+
             h2 {
                 color: #30475E;
                 margin: 0px;
-                margin-top: 20px;
-                font-size: 28px;
+                margin-top: 4px;
+                margin-left: 0px;
+                font-size: 30px;
                 font-weight: 400;
+                z-index: 1;
             }
 
             p {
-                color: #121212;
-                font-size: 19px;
+                margin-top: 28px;
+                color: #000000;
+                font-size: 18px;
+                width: 70%;
+                line-height: 27px;
+                z-index: 1;
+            }
+
+            .links {
+                margin-top: 26px;
+                z-index: 1;
+                a.intro-link {
+                    display: inline-block;
+                    margin-left: 0px;
+                    color: #222222;
+                    text-decoration: none;
+                    svg {
+                        //background-color: rgba(255,255,255,1);
+                        border-radius: 17px;
+                        padding: 2px;
+                        height: 28px;
+                        width: 28px;
+                        margin-right: 10px;
+                    }
+                }
+                
             }
         }
     }
@@ -69,5 +103,4 @@
     left: 0;
     width: inherit;
     height: inherit;
-  }
-  
+}

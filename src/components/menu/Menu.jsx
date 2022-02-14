@@ -1,8 +1,9 @@
 import "./menu.scss"
+import React, { useRef, useEffect } from "react";
 
-export default function Menu({menuOpen, setMenuOpen}) {
+export default function Menu({menuOpen, setMenuOpen, menuRef}) {
     return (
-        <div className={"menu "+ (menuOpen && "active")}>
+        <div ref={menuRef} className={"menu "+ (menuOpen && "active")}>
             <ul>
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href="#intro">Home</a>
